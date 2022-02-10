@@ -1,0 +1,138 @@
+
+button {
+    transition: all .5s;
+    background: darkblue;
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: white;
+    color: black;
+}
+
+.sentence {
+    overflow: scroll;
+    border: 1px solid black;
+   }
+
+div {
+    margin-bottom: 10px;
+}
+
+main {
+    box-sizing: border-box; /* 余白もコンテンツ幅に含める */
+    width:  100%; /* コンテンツの横幅 */
+    max-width: 600px; /* 最大で600pxに固定 */
+    margin: 0 auto; /* marginを使用して中央配置 */
+    padding: 10px; /* コンテンツの内側に余白 */
+    box-shadow: 0 0 5px 0 darkblue; /* コンテンツに影設定 */
+    margin-bottom: 10px;
+  }
+
+h1 {
+    text-align: center; /* テキストを中央揃えに */
+  }
+
+#lyrics {
+    height: 0px;
+    overflow: scroll;
+}
+#open {
+    visibility: hidden;
+}
+
+
+#open:checked + #lyrics {
+    border: 1px solid black;
+    height: 5rem;
+}
+
+input {
+    display: none;
+   }
+   label {
+    border: 1px solid black;
+    padding: 0 10px;
+   }
+   input:checked + label {
+    background: black;
+    color: white;
+   }
+   .sho, .chiku, .bai {
+    display: none;
+    border: 1px solid black;
+    width: 150px;
+    height: 50px;
+   }
+   #sho:checked ~ .sho,
+   #chiku:checked ~ .chiku,
+   #bai:checked ~ .bai {
+    display: block;
+   }
+
+   
+   #hamburger {
+    width: 50px;
+    height: 50px;
+    background: darkblue;
+    position: relative;
+    display: block;
+   }
+   #hamburger #line, #hamburger #line::before,
+   #hamburger #line::after {
+    display: block;
+    width: 70%;
+    height: 3px;
+    background: white;
+    position: absolute;
+    transition: all .5s;
+   }
+   #hamburger #line {
+    top: 24px;
+    left: 15%;
+   }
+   #hamburger #line::before,
+   #hamburger #line::after {
+    content: "";
+    width: 100%;
+    position: absolute;
+   }
+   #hamburger #line::before {
+    top: -10px;
+   }
+   #hamburger #line:after {
+    top: 10px;
+   }
+
+   #menu {
+    display: none;
+   }
+   #menu ~ #menuList {
+    border: 1px solid black;
+    position: absolute;
+    background: white;
+    width: 200px;
+    left: -300px;
+    top: 60px;
+    transition: left .5s;
+   }
+   #menu:checked ~ #menuList {
+    left: 10px;
+   }
+   #menu:checked ~ #hamburger #line {
+    background: navy;
+   }
+   #menu:checked ~ #hamburger #line::before {
+    top: 0px;
+    transform: rotate(45deg);
+   }
+   #menu:checked ~ #hamburger #line::after {
+    top: 0px;
+    transform: rotate(-45deg);
+   }
+
+
+      
+   

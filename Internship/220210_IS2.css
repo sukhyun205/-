@@ -1,0 +1,60 @@
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes stretch {
+    from {
+        height: 0;
+    }
+    to {
+        height: 100;
+    }
+}
+
+@keyframes colorful {
+    0% {
+        background: red;
+    }
+    50% {
+        background: green;
+    }
+    100% {
+        background: blue;
+    }
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    background: lightblue;
+    overflow: hidden;
+    animation: 1s 2 alternate stretch;
+}
+
+button {
+    transition: all .5s;
+    background: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: black;
+    color: white;
+}
+
+h2 {
+    background: black;
+    color: white;
+    opacity: 0.5;
+}
+p {
+    background: #ffffffaa;
+}
