@@ -1,0 +1,78 @@
+
+.flex {
+    display: flex;
+}
+.flower {
+    background: darkred;
+    color: white;
+    flex: auto;
+}
+.grass {
+    background: darkgreen;
+    color: white;
+    flex: auto;
+}
+
+.sentence {
+    height: 5em;
+    width: 10em;
+    overflow: scroll;
+    border: 1px solid black;
+   }
+
+div {
+    margin-top: 5%;
+}
+
+.a {
+    display: block;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: calc(50% - 75px);
+    left: calc(50%- 75px);
+    background: darkred;
+    color: white;
+    line-height: 150px;
+    text-align: center;
+}
+
+.stone {
+    display: block;
+    background: orange;
+    color: white;
+}
+
+.dog {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background: lightgray;
+}
+
+.monkey {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: orange;
+}
+
+.color {
+    color: blue;
+}
+
+p.color {
+    color: red;
+}
+
+div span {
+    font-weight: bold;
+}
+
+div > div {
+    color: blue;
+}
+
+div + p {
+    text-decoration: underline;
+}
