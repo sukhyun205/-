@@ -1,0 +1,12 @@
+div {
+    max-width: 300px;
+    background: pink;
+    padding: 10px;
+}
+
+article {
+    background: red;
+    margin: 10px;
+    padding: 20px;
+}
+
