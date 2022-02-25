@@ -1,0 +1,61 @@
+#img {
+    width: 30px;
+}
+
+.img {
+    width: 300px;
+    border: 1px solid black;
+}
+
+.back-image {
+    background-image: url("./back.jpg");
+    background-position: center;
+    background-size: 50%;
+    color: white;
+}
+
+/* overflow를 넣음으로서 img borderline을 둥글게 설정가능 */
+.icon {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+.icon-img {
+    width: 100%;
+}
+
+.shadow {
+    box-shadow: 10px 10px 100px #ff0000;
+}
+
+.shadow-inset {
+    box-shadow: 10px 10px 100px gray inset;
+}
+
+#parent {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+   }
+   .child {
+    flex-basis: 280px;
+    margin: 10px;
+    height: 280px;
+    background: lightgray;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    background: yellowgreen;
+    border-radius: 10px;
+}
+
+a {
+    margin: 10px;
+    flex-basis: 33%;
+    text-align: center;
+   }
